@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <io.github.florent37.shapeofview.shapes.ArcView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:elevation="4dp"
+
+            app:shape_arc_height="20dp"
+            app:shape_arc_position="bottom"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#474646" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Bienvenido"
+                android:textColor="#F64444"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"/>
+
+
+            <io.github.florent37.shapeofview.shapes.BubbleView
+                android:layout_gravity="center|top"
+                android:layout_marginTop="80dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:shape_bubble_arrowHeight="10dp"
+                app:shape_bubble_arrowWidth="10dp"
+                app:shape_bubble_arrowPosition="bottom"
+                app:shape_bubble_borderRadius="20dp"
+                app:arrow_posititon_percent="0.5"
+                >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/spartnas"
+                    />
+
+            </io.github.florent37.shapeofview.shapes.BubbleView>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleback"
+                android:layout_width="40dp"
+                android:layout_marginTop="290dp"
+                android:layout_marginLeft="290dp"
+                android:layout_height="40dp"
+                android:src="@drawable/poweroff"
+
+                app:civ_circle_background_color="#9E9D9D"/>
+            <TextView
+                android:id="@+id/nombreusuario"
+                android:layout_width="match_parent"
+                android:text=" "
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:layout_marginTop="300dp"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+        </io.github.florent37.shapeofview.shapes.ArcView>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout >

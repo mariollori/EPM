@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <io.github.florent37.shapeofview.shapes.DiagonalView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:elevation="4dp"
+            app:shape_diagonal_angle="4"
+
+            app:shape_diagonal_position="bottom">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Lista de Peliculas "
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="#D51A1A"
+                android:gravity="center"
+                android:textSize="20dp"/>
+
+
+
+        </io.github.florent37.shapeofview.shapes.DiagonalView>
+
+
+
+        <ListView
+            android:id="@+id/listpersons"
+            android:layout_width="380dp"
+            android:layout_gravity="center"
+            android:layout_height="500dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
